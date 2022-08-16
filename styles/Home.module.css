@@ -67,10 +67,15 @@
 
 .grid {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   max-width: 800px;
+}
+
+.grid span {
+  font-size: 36px;
 }
 
 .card {
@@ -82,7 +87,15 @@
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  width: min-content;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+  rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+  rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.card img {
+  width: 336.63px ;
+  height: 450px;
 }
 
 .card:hover,
@@ -108,6 +121,7 @@
   margin-left: 0.5rem;
 }
 
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
@@ -115,7 +129,7 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: null) {
   .card,
   .footer {
     border-color: #222;

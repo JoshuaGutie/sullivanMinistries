@@ -10,8 +10,8 @@
 
 html,
 body {
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -49,6 +49,7 @@ a {
 
 .navContainer {
   display: flex;
+  margin: 0px;
   width: 100vw;
   height: 90px;
   background-image:url("/images/nav.jpg") ;
@@ -102,18 +103,23 @@ a {
 
 /*About Styling*/
 
+.aboutContainer{
+  width: 100vw;
+}
 .aboutTextContainer {
   display: flex;
   margin-top: 50px;
+  flex-direction: column;
 }
 
 .aboutText {
-  width: 50vw;
+  width: 90vw;
   margin: 5vw;
 }
 .author {
   width: 350px;
   height: auto;
+  margin: auto;
 }
 
 .test-card-hint p{

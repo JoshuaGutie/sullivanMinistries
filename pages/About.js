@@ -21,7 +21,7 @@ function About() {
             true and lasting happiness.{" "}
           </p>
         </div>
-        <img src="/images/authorphoto.jpg" alt="author" className="author" />
+        <img src="/images/bookcover.png" alt="author" className="author" />
 
       </div>
     </div>

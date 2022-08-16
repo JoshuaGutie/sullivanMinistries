@@ -2,6 +2,8 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import products from "../products.json";
 import Nav from "./Nav";
+import Cover from "./Cover";
+import About from "./About";
 
 export default function Home() {
   return (
@@ -14,10 +16,10 @@ export default function Home() {
           href="https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.css"
         />
       </Head>
-
+      <Nav />
       <main className={styles.main}>
-       <Nav />
-
+      <img src="/images/logoBlack.svg" alt="logo" className="logo" />
+        <Cover />
         <div className={styles.grid}>
           <span>New Book Available!</span>
           {products.map((product) => {
@@ -42,11 +44,10 @@ export default function Home() {
             );
           })}
         </div>
+        <About />
       </main>
 
-      <footer className={styles.footer}>
-        
-      </footer>
+      <footer className={styles.footer}></footer>
       <script
         async
         src="https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.js"
@@ -56,7 +57,6 @@ export default function Home() {
         id="snipcart"
         data-api-key="ZDRmMDAxYjctZGY3NC00MDg2LWFkZmItZDhiNjgyYTE2YjlkNjM3OTYwNTYwNDUzODIxNjA2"
       />
-      
     </div>
   );
 }

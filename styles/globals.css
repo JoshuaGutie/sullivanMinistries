@@ -76,7 +76,7 @@ a {
   display: flex;
   background-image: url("/images/cover.png");
   width: 100vw;
-  height: 250px;
+  height: 270px;
   margin-top: 15px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -86,7 +86,7 @@ a {
 
 .coverText {
   margin: auto;
-  margin-bottom: 5vh;
+  margin-bottom: 2vh;
   font-size: 1.5em;
   width: fit-content;
   height: fit-content;

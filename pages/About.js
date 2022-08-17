@@ -4,25 +4,29 @@ function About() {
       <div className="navContainer" />
       <div className="aboutTextContainer">
         <div className="aboutText">
-          <h3 className="text">
-            Real, lasting happiness can only be found by following God’s
-            commands.
-          </h3>
+          <h3 className="text" style={{fontSize:"32px",textDecoration:"underline"}}>About the Author</h3>
           <p className="text">
-            That’s why Pastor Ray created The Habits of Happiness Bible study to
-            show you how happiness that’s grounded in God’s unconditional love
-            runs deeper than any difficult circumstance, feeling, or
-            relationship you experience.
+            Reagan Sullivan has been in the Lord for close to 35 years. He has
+            had the blessing of experiencing a very wide spectrum of Church
+            experience ranging from Anabaptist/brethren, to evangelical
+            Nondenominationalism, and even survived a sociological cult! This,
+            along with his voracious hunger for truth has provided Reagan with a
+            keen understanding of biblical doctrine and life. Additionally,
+            Reagan has a Bachelor of Ministry and a masters of divinity.
             <br />
-            This interactive, full color, hardcover book is filled with
-            Scripture, biblical truths, practical lessons, application
-            exercises, and prayers to guide your journey. It’s a comprehensive
-            study tool that will help you develop biblical habits that lead to
-            true and lasting happiness.{" "}
+            <br /> 
+            Along with his son, Reagan has pioneered Austin family Fellowship
+            Church. AFF is a Home Church Network that employs the structure and
+            mindset of the early church and is seeking to regain the powerful
+            aspects of Christian community. 
+            <br /> 
+            <br /> 
+            Reagan… Or “brother Ray” as he is called, truly has a heart to
+            further the kingdom of God in the lives of those in whom he has
+            contact with. It is for this reason that he writes both books and
+            songs, Ministers in the church, and serves the needy.
           </p>
         </div>
-        <img src="/images/bookcover.png" alt="author" className="author" />
-
       </div>
     </div>
   );

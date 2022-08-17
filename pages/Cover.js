@@ -2,7 +2,7 @@ function Cover() {
   return (
     <div className="coverContainer">
       <div className="cover">
-          <h1 className="coverText">Grow Your Faith everyday</h1>
+          <h1 className="coverText">For the equipping of the saints</h1>
       </div>
       <div className="underCover">
         <h3 style={{marginTop:'75px'}} className="text">Real, lasting happiness can only be found by following God’s commands.</h3>

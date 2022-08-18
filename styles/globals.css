@@ -125,7 +125,7 @@ a {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1400px) {
   /*Snipcart styling */
   .snipcart * {
     font-size: 1.04em;
@@ -201,5 +201,18 @@ a {
   .snipcart-item-quantity__quantity-price-container {
     display: flex;
     flex-direction: column;
+  }
+
+  /*cover*/
+
+  .cover {
+    background-image: url("../public/images/coverDesktop.png");
+    height: 750px;
+  }
+
+  .coverText{
+    font-size: 3em;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
 }

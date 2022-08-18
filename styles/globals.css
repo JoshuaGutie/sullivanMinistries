@@ -187,6 +187,7 @@ font-size: 25px;
 @media only screen and (max-width: 1200px) {
   .snipcart * {
     font-size: 1.04em;
+    margin: 0 0 2px 0;
   }
   .snipcart-cart-header {
     font-size: 1.5em;

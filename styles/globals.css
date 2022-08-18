@@ -27,8 +27,46 @@ a {
 
 /*Snipcart styling */
 .snipcart * {
-  font-size: 1.02em;
+  font-size: 1.04em;
+  width: fit-content;
+  right: 0;
+  left: auto;
+  margin: 0 auto 2px auto;
+  background-color: #d8d8d8;
 }
+
+.snipcart a {
+  text-align: center;
+}
+.snipcart-button-primary {
+  margin: 0px;
+}
+
+.snipcart__font--secondary {
+  margin: 0px;
+}
+.snipcart-item-line__container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20 0 20;
+}
+
+.snipcart-cart-header {
+  font-size: 1.5em;
+  width: 30vw;
+}
+
+.snipcart-cart-header__title {
+text-align: right;
+}
+.snipcart-base-button {
+  color: #252525;
+}
+
+.snipcart-modal__close-title{
+width: 10vw;
+}
+
 .snipcart-cart-summary__content {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
   rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
@@ -134,5 +172,16 @@ font-size: 25px;
   body {
     color: white;
     background: black;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .snipcart * {
+    font-size: 1.04em;
+    width: max-content;
+  }
+  .snipcart-cart-header {
+    font-size: 1.5em;
+    width: 100vw;
   }
 }

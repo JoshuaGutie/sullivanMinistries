@@ -5,7 +5,7 @@
   text-align: center;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 1.1em;
+  font-size: 1.5em;
 }
 
 html,
@@ -52,9 +52,10 @@ a {
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.logo {
+.navLogo {
   width: 200px;
   height: 75px;
+  margin: auto 0 auto 0;
 }
 
 /*Cover styling */
@@ -102,8 +103,18 @@ a {
 }
 
 .aboutText {
+  display: flex;
+  flex-direction: column;
   width: 90vw;
   margin: 5vw;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+  rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+  rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.authTitle {
+  font-size: 2em;
+  
 }
 .author {
   width: 350px;
@@ -111,8 +122,30 @@ a {
   margin: auto;
 }
 
+.authorPhoto {
+  width: 306px;
+}
+.apContainer {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  
+}
+
 .test-card-hint p {
   font-size: 25px;
+}
+/* Footer styling*/
+
+.footerContainer {
+  width: 100vw;
+  height: 365px;
+  background-color:#411212;
+  border-top:10px solid #6D0003;
+}
+
+.footerContainer img {
+  margin: auto;
 }
 
 @media (prefers-color-scheme: null) {
@@ -126,83 +159,13 @@ a {
 }
 
 @media only screen and (min-width: 1400px) {
-  /*Snipcart styling */
   .snipcart * {
-    font-size: 1.04em;
-    width: fit-content;
-    right: 0;
-    left: auto;
-    margin: 0 auto 2px auto;
-    background-color: #d8d8d8;
-  }
-  .snipcart-modal__container {
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-      rgba(0, 0, 0, .4) 0px -12px 30px, rgba(0, 0, 0, 0.5) 0px 4px 6px,
-      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    font-size: 1.03em;
   }
 
-  .snipcart a {
-    text-align: center;
-  }
-  .snipcart-button-primary {
-    margin: 30px;
-    padding: 0px;
-    font-size: 1.4em;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-      rgba(0, 0, 0, 0.1) 0px -12px 30px, rgba(0, 0, 0, 0.1) 0px 4px 6px,
-      rgba(0, 0, 0, 0.1) 0px 12px 13px, rgba(0, 0, 0, 0.01) 0px -3px 5px;
-  }
-
-  .snipcart__font--secondary {
-    margin: 0px;
-  }
-  .snipcart-item-line__container {
-    display: flex;
-    flex-direction: column;
-    margin: 0 20 0 20;
-  }
-
-  .snipcart-cart-header {
-    font-size: 1.5em;
-    width: 30vw;
-  }
-
-  .snipcart-cart-header__title {
-    text-align: right;
-  }
-  .snipcart-base-button {
-    color: #252525;
-  }
-
-  .snipcart-modal__close-title {
-    width: 10vw;
-  }
-
-  .snipcart-cart-summary__content {
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  }
   .snipcart-form {
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    font-size: 1.03em;
   }
-
-  .snipcart-button-primary:hover {
-    color: #252525;
-  }
-
-  .snipcart-item-quantity {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .snipcart-item-quantity__quantity-price-container {
-    display: flex;
-    flex-direction: column;
-  }
-
   /*cover*/
 
   .cover {
@@ -210,9 +173,19 @@ a {
     height: 750px;
   }
 
-  .coverText{
+  .coverText {
     font-size: 3em;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+
+  .aboutTextContainer {
+    flex-direction: row;
+    width: 60vw;
+    margin: auto;
+  }
+
+  .aboutText {
+    width: 40vw;
   }
 }

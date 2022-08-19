@@ -4,6 +4,7 @@ import products from "../products.json";
 import Nav from "./Nav";
 import Cover from "./Cover";
 import About from "./About";
+import Footer from "./Footer";
 
 export default function Home() {
   return (
@@ -47,7 +48,7 @@ export default function Home() {
         <About />
       </main>
 
-      <footer className={styles.footer}></footer>
+      <footer className={styles.footer}><Footer /></footer>
       <script
         async
         src="https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.js"

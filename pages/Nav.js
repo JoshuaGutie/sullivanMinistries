@@ -1,11 +1,12 @@
 import React, { Component } from "react";
-
+import Image from "next/dist/client/image";
+import ministries from "../public/images/ministries.png"
 
 class Nav extends Component {
   render() {
     return (
       <div className="navContainer">
-        <img src="/images/logo.png" alt="logo" className="logo" />
+        <div className="navLogo"><Image src={ministries} alt="logo" className="logo" /></div>
       </div>
     );
   }

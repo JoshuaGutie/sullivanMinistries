@@ -7,7 +7,7 @@ function About() {
       <div className="navContainer" />
       <div className="aboutTextContainer">
         <div className="apContainer">
-          <Image src={authorPhoto} alt="author" className="authorPhoto" />
+          <div><Image src={authorPhoto} alt="author" className="authorPhoto" /></div>
           <span className="text authTitle">Author Reagan Sulivan</span>
         </div>
         <div className="aboutText">

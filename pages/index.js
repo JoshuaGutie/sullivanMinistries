@@ -6,6 +6,7 @@ import Cover from "./Cover";
 import About from "./About";
 import Footer from "./Footer";
 import Image from "next/dist/client/image";
+import logoBlack from "../public/images/logoBlack.svg"
 
 export default function Home() {
   return (
@@ -20,14 +21,14 @@ export default function Home() {
       </Head>
       <Nav />
       <main className={styles.main}>
-      <Image src="/images/logoBlack.svg" alt="logo" className="logo" />
+      <Image src={logoBlack} alt="logo" className="logo" />
         <Cover />
         <div className={styles.grid}>
           <span>New Book Available!</span>
           {products.map((product) => {
             return (
               <div key={product.id} className={styles.card}>
-                <Image src={product.image} alt={`Preview of ${product.title}`} />
+                <img src={product.image} alt={`Preview of ${product.title}`} />
                 <h3>{product.title}</h3>
                 <p>{product.description}</p>
                 <p>${product.price}</p>

@@ -1,4 +1,4 @@
-import authorPhoto from "../public/images/authorPhoto.png";
+import authorphoto from "../public/images/authorphoto.png";
 import Image from "next/image";
 
 function About() {
@@ -7,7 +7,7 @@ function About() {
       <div className="navContainer" />
       <div className="aboutTextContainer">
         <div className="apContainer">
-          <div><Image src={authorPhoto} alt="author" className="authorPhoto" /></div>
+          <div><Image src={authorphoto} alt="author" className="authorPhoto" /></div>
           <span className="text authTitle">Author Reagan Sulivan</span>
         </div>
         <div className="aboutText">

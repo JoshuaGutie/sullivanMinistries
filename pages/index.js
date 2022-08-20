@@ -6,6 +6,7 @@ import Cover from "./Cover";
 import About from "./About";
 import Footer from "./Footer";
 import Image from "next/dist/client/image";
+import { Button } from '@mui/material';
 import logoBlack from "../public/images/logoBlack.svg"
 
 export default function Home() {
@@ -23,8 +24,8 @@ export default function Home() {
       <main className={styles.main}>
       <Image src={logoBlack} alt="logo" className="logo" />
         <Cover />
+        <span className="text">New Book Available!</span>
         <div className={styles.grid}>
-          <span>New Book Available!</span>
           {products.map((product) => {
             return (
               <div key={product.id} className={styles.card}>
@@ -32,8 +33,11 @@ export default function Home() {
                 <h3>{product.title}</h3>
                 <p>{product.description}</p>
                 <p>${product.price}</p>
-                <p>
-                  <button
+                <div className="button">
+                  <Button
+                    color="primary"
+                    variant="outlined"
+                    type="primary"
                     className="snipcart-add-item"
                     data-item-id={product.id}
                     data-item-image={product.image}
@@ -41,8 +45,8 @@ export default function Home() {
                     data-item-price={product.price}
                   >
                     Add to Cart
-                  </button>
-                </p>
+                  </Button>
+                </div>
               </div>
             );
           })}

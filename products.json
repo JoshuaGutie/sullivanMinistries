@@ -5,7 +5,22 @@
         "id": "faith-study",
         "description": "The book Christian faith study Is a 24 topic study guide that leads the reader to seek the word of God and encourages them to dig for answers... Show more",
         "price": "20.00"
-      }
+      },
 
+      {
+        "title": "Christian Faith Study",
+        "image": "/images/bookCover.png",
+        "id": "faith-study",
+        "description": "The book Christian faith study Is a 24 topic study guide that leads the reader to seek the word of God and encourages them to dig for answers... Show more",
+        "price": "20.00"
+      },
+
+      {
+        "title": "Christian Faith Study",
+        "image": "/images/bookCover.png",
+        "id": "faith-study",
+        "description": "The book Christian faith study Is a 24 topic study guide that leads the reader to seek the word of God and encourages them to dig for answers... Show more",
+        "price": "20.00"
+      }
 
 ]

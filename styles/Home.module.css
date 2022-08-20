@@ -2,6 +2,11 @@
   padding: 0 ;
 }
 
+.button {
+  display:flex ;
+margin: auto;
+width: min-content;
+}
 .main {
   min-height: 100vh;
   padding: 0;
@@ -66,7 +71,6 @@
 
 .grid {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -125,6 +129,11 @@
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+
+  .Home_grid__GxQ85 {
+    flex-direction: row !important;
+    width: 40vw;
   }
 }
 

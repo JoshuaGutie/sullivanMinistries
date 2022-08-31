@@ -2,12 +2,13 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import products from "../products.json";
 import Nav from "./Nav";
+import Books from "./Books";
 import Cover from "./Cover";
 import About from "./About";
 import Footer from "./Footer";
 import Image from "next/dist/client/image";
-import { Button } from '@mui/material';
 import logoBlack from "../public/images/logoBlack.svg"
+
 
 export default function Home() {
   return (
@@ -24,33 +25,7 @@ export default function Home() {
       <main className={styles.main}>
       <Image src={logoBlack} alt="logo" className="logo" />
         <Cover />
-        <span className="text">New Book Available!</span>
-        <div className={styles.grid}>
-          {products.map((product) => {
-            return (
-              <div key={product.id} className={styles.card}>
-                <img src={product.image} alt={`Preview of ${product.title}`} />
-                <h3>{product.title}</h3>
-                <p>{product.description}</p>
-                <p>${product.price}</p>
-                <div className="button">
-                  <Button
-                    color="primary"
-                    variant="outlined"
-                    type="primary"
-                    className="snipcart-add-item"
-                    data-item-id={product.id}
-                    data-item-image={product.image}
-                    data-item-name={product.title}
-                    data-item-price={product.price}
-                  >
-                    Add to Cart
-                  </Button>
-                </div>
-              </div>
-            );
-          })}
-        </div>
+        <Books />
         <About />
       </main>
 

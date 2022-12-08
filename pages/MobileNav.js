@@ -26,7 +26,7 @@ class MobileNav extends Component {
     render() {
       return (
         <div className="mobileNavContainer">
-          <div class="mobileNav">
+          <div className="mobileNav">
             <Fab style={{ margin: "auto 0 auto 0" }}>
               <MenuIcon
                 fontSize="large"

@@ -7,7 +7,7 @@ function Cover() {
       <div className="cover">
         <h1 className="coverText">For the equipping of the saints</h1>
       </div>
-      <div className="underCover">
+      <div className="underCover" id="books">
         <h3 style={{ marginTop: "75px" }} className="text">
           Real, lasting happiness can only be found by following God’s commands.
         </h3>

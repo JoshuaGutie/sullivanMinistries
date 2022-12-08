@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function About() {
   return (
-    <div className="aboutContainer">
+    <div className="aboutContainer" id="about">
       <div className="navContainer" />
       <div className="aboutTextContainer">
         <div className="apContainer">

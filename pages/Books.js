@@ -29,6 +29,7 @@ function Books() {
                                 data-item-image={product.image}
                                 data-item-name={product.title}
                                 data-item-price={product.price}
+                                data-item-url={product.url}
                             >
                                 Add to Cart
                             </Button>
